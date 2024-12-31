@@ -1,0 +1,30 @@
+@keyframes sparkle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.2); }
+}
+
+@keyframes rotate3D {
+  0% { transform: rotate3d(1, 1, 1, 0deg); }
+  100% { transform: rotate3d(1, 1, 1, 360deg); }
+}
+
+@keyframes messageAppear {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.sparkle-effect {
+  animation: messageAppear 0.5s ease-out;
+}
+
+.flip-animation {
+  animation: flipEffect 0.8s ease-in-out;
+}
+
+.sparkle {
+  animation: sparkle 2s infinite;
+}
+
+.firework {
+  animation: rotate3D 4s linear infinite;
+}
